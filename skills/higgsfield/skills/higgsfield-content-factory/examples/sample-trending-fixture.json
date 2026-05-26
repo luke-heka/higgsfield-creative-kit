@@ -1,0 +1,354 @@
+{
+  "_meta": {
+    "fixture_name": "sample-trending-fixture",
+    "description": "Deterministic fallback for Stage 1 (Research) when Apify MCP is unreachable. Mirrors the shape Apify's IG profile scraper returns. Niche: 'AI for solo personal trainers'. Numbers are illustrative, clearly marked.",
+    "generated_at": "2026-05-24",
+    "fixture_mode": true,
+    "warning_to_skill": "If you use this fixture, flag 'Mode: FIXTURE (Apify unavailable)' at the top of 01-research.md. Do NOT present these numbers to the user as live data.",
+    "niche": "AI for solo personal trainers in Australia who run their own gym",
+    "time_window_days": 30,
+    "n_competitors": 8
+  },
+  "competitors": [
+    {
+      "handle": "@example_pt_one",
+      "positioning": "Solo PT building an AI-assisted programming system",
+      "follower_count": 14200,
+      "relevance": "Direct ICP match, solo PT, Australian, talks tools"
+    },
+    {
+      "handle": "@example_pt_two",
+      "positioning": "Functional fitness coach + Notion templates for clients",
+      "follower_count": 22800,
+      "relevance": "Adjacent, same niche, leans on Notion not Claude"
+    },
+    {
+      "handle": "@example_pt_three",
+      "positioning": "Bodybuilding PT documenting client win stories",
+      "follower_count": 41000,
+      "relevance": "Authority + story format, hook archetypes worth borrowing"
+    },
+    {
+      "handle": "@example_coach_four",
+      "positioning": "Online coach productising AI prompt packs for trainers",
+      "follower_count": 9800,
+      "relevance": "Direct competitor, prompts + AI angle, smaller audience"
+    },
+    {
+      "handle": "@example_studio_five",
+      "positioning": "Boutique gym owner sharing operations playbooks",
+      "follower_count": 17600,
+      "relevance": "Operations adjacency, useful for case-study formats"
+    },
+    {
+      "handle": "@example_coach_six",
+      "positioning": "Online coach with strong cheat-sheet carousel format",
+      "follower_count": 33400,
+      "relevance": "Format inspiration, cheat sheets perform well in this niche"
+    },
+    {
+      "handle": "@example_pt_seven",
+      "positioning": "Senior PT focused on macro programming for women 35+",
+      "follower_count": 11500,
+      "relevance": "Audience overlap, same demographic, no AI angle yet"
+    },
+    {
+      "handle": "@example_studio_eight",
+      "positioning": "Studio owner running 1-on-1 + small group, AI scheduling",
+      "follower_count": 19200,
+      "relevance": "Use-case adjacency, scheduling, intake automation"
+    }
+  ],
+  "top_20_trending_carousels": [
+    {
+      "rank": 1,
+      "handle": "@example_pt_one",
+      "hook_verbatim": "5 things I stopped doing once I gave Claude my client notes",
+      "archetype": "Specific-Number + Authority",
+      "likes": 3120,
+      "comments": 184,
+      "saves": 442,
+      "engagement_score": 0.382,
+      "why_worked_hypothesis": "Specific number + first-person authority + tool named, pattern interrupt for the niche which rarely names AI tools"
+    },
+    {
+      "rank": 2,
+      "handle": "@example_coach_six",
+      "hook_verbatim": "The 1-page client check-in I run every Monday morning",
+      "archetype": "Curiosity-Gap + Specific-Cadence",
+      "likes": 5800,
+      "comments": 219,
+      "saves": 1102,
+      "engagement_score": 0.213,
+      "why_worked_hypothesis": "Save-magnet hook (templates always save well) + specific timing makes it feel actionable"
+    },
+    {
+      "rank": 3,
+      "handle": "@example_studio_five",
+      "hook_verbatim": "How we cut intake calls from 45 min to 12 min",
+      "archetype": "Specific-Number + Outcome-Receipt",
+      "likes": 2640,
+      "comments": 96,
+      "saves": 388,
+      "engagement_score": 0.182,
+      "why_worked_hypothesis": "Outcome receipt with specific numbers, operations adjacency that resonates with anyone running 1-on-1 client work"
+    },
+    {
+      "rank": 4,
+      "handle": "@example_pt_three",
+      "hook_verbatim": "Stop selling programs. Sell the system that runs them",
+      "archetype": "Contrarian + Reframe",
+      "likes": 7900,
+      "comments": 412,
+      "saves": 920,
+      "engagement_score": 0.226,
+      "why_worked_hypothesis": "Direct contrarian against industry norm + reframe to systems thinking, punches above the niche's usual depth"
+    },
+    {
+      "rank": 5,
+      "handle": "@example_pt_one",
+      "hook_verbatim": "The 3 questions Claude asks me about every new client before I do",
+      "archetype": "Curiosity-Gap + Tool-Named",
+      "likes": 2890,
+      "comments": 174,
+      "saves": 367,
+      "engagement_score": 0.243,
+      "why_worked_hypothesis": "Curiosity gap + AI tool named + implies a system that's running, very strong save signal"
+    },
+    {
+      "rank": 6,
+      "handle": "@example_coach_four",
+      "hook_verbatim": "5 AI prompts that write a 12-week macro split in 30 seconds",
+      "archetype": "Specific-Number + Outcome",
+      "likes": 4400,
+      "comments": 268,
+      "saves": 1840,
+      "engagement_score": 0.660,
+      "why_worked_hypothesis": "Massive save magnet, prompt drops always save well + specific quant outcome, but ceiling is short-term hype"
+    },
+    {
+      "rank": 7,
+      "handle": "@example_pt_two",
+      "hook_verbatim": "The Notion table that runs 14 clients without me touching it",
+      "archetype": "Curiosity-Gap + Specific-Number",
+      "likes": 6100,
+      "comments": 230,
+      "saves": 1322,
+      "engagement_score": 0.297,
+      "why_worked_hypothesis": "Save magnet template hook + 'without me touching it' implies system + specific client count"
+    },
+    {
+      "rank": 8,
+      "handle": "@example_studio_eight",
+      "hook_verbatim": "I haven't manually booked a client in 6 months. Here's how",
+      "archetype": "Authority + Specific-Cadence",
+      "likes": 3320,
+      "comments": 142,
+      "saves": 612,
+      "engagement_score": 0.213,
+      "why_worked_hypothesis": "Personal proof + specific time window + implicit promise of system without naming the tool, curiosity holds"
+    },
+    {
+      "rank": 9,
+      "handle": "@example_pt_seven",
+      "hook_verbatim": "Why 80% of women 40+ stop training within 6 weeks",
+      "archetype": "Specific-Number + Problem-Aware",
+      "likes": 8200,
+      "comments": 511,
+      "saves": 1450,
+      "engagement_score": 0.884,
+      "why_worked_hypothesis": "Audience-specific stat + clear pain point, outperforms even tool-named carousels because the problem-aware audience is huge"
+    },
+    {
+      "rank": 10,
+      "handle": "@example_coach_six",
+      "hook_verbatim": "My 7-app stack for running 28 online clients",
+      "archetype": "Stack-Reveal + Specific-Number",
+      "likes": 4900,
+      "comments": 180,
+      "saves": 1180,
+      "engagement_score": 0.181,
+      "why_worked_hypothesis": "Stack reveal is a high-save format + specific client count gives social proof"
+    },
+    {
+      "rank": 11,
+      "handle": "@example_pt_three",
+      "hook_verbatim": "3 things I wish I knew before I went full-time as a PT",
+      "archetype": "Specific-Number + Authority",
+      "likes": 5400,
+      "comments": 312,
+      "saves": 442,
+      "engagement_score": 0.151,
+      "why_worked_hypothesis": "Aspirational angle + first-person story, strong comment magnet"
+    },
+    {
+      "rank": 12,
+      "handle": "@example_pt_one",
+      "hook_verbatim": "The exact prompt I use to write client emails",
+      "archetype": "Curiosity-Gap + Tool-Named",
+      "likes": 2110,
+      "comments": 104,
+      "saves": 488,
+      "engagement_score": 0.197,
+      "why_worked_hypothesis": "Prompt drops save well + very specific use case"
+    },
+    {
+      "rank": 13,
+      "handle": "@example_studio_five",
+      "hook_verbatim": "If you're charging by the session you're capped at $80k",
+      "archetype": "Contrarian + Specific-Number",
+      "likes": 9100,
+      "comments": 624,
+      "saves": 720,
+      "engagement_score": 0.594,
+      "why_worked_hypothesis": "Contrarian + specific dollar figure, direct hit on the niche's pricing pain"
+    },
+    {
+      "rank": 14,
+      "handle": "@example_coach_four",
+      "hook_verbatim": "5 prompts every PT should steal from me this week",
+      "archetype": "Specific-Number + Authority",
+      "likes": 3800,
+      "comments": 162,
+      "saves": 1280,
+      "engagement_score": 0.535,
+      "why_worked_hypothesis": "Save magnet prompt format + 'steal from me' is permission-to-take framing"
+    },
+    {
+      "rank": 15,
+      "handle": "@example_pt_two",
+      "hook_verbatim": "The 4 client touchpoints I automated last month",
+      "archetype": "Specific-Number + Operations-Receipt",
+      "likes": 2840,
+      "comments": 124,
+      "saves": 510,
+      "engagement_score": 0.157,
+      "why_worked_hypothesis": "Operations adjacency + specific timeline + 'automated' implies a system"
+    },
+    {
+      "rank": 16,
+      "handle": "@example_pt_seven",
+      "hook_verbatim": "Why your 6am clients are dropping off",
+      "archetype": "Problem-Aware + Curiosity-Gap",
+      "likes": 4700,
+      "comments": 388,
+      "saves": 412,
+      "engagement_score": 0.475,
+      "why_worked_hypothesis": "Problem hook with specific audience + curiosity, comments come from PTs sharing their own data"
+    },
+    {
+      "rank": 17,
+      "handle": "@example_studio_eight",
+      "hook_verbatim": "The 3 calendar settings that recovered my Tuesdays",
+      "archetype": "Specific-Number + Operations-Receipt",
+      "likes": 2200,
+      "comments": 88,
+      "saves": 384,
+      "engagement_score": 0.140,
+      "why_worked_hypothesis": "Operations specificity + 'recovered my Tuesdays' is a vivid time-back hook"
+    },
+    {
+      "rank": 18,
+      "handle": "@example_pt_one",
+      "hook_verbatim": "I gave Claude every client note for a year. Here's what it found",
+      "archetype": "Authority + Curiosity-Gap + Tool-Named",
+      "likes": 6800,
+      "comments": 402,
+      "saves": 1190,
+      "engagement_score": 0.591,
+      "why_worked_hypothesis": "Strong proof (year of data) + tool named + curiosity payoff, top archetype combo for the niche"
+    },
+    {
+      "rank": 19,
+      "handle": "@example_coach_six",
+      "hook_verbatim": "Stop writing programs from scratch. Use this template",
+      "archetype": "Contrarian + Save-Magnet",
+      "likes": 5300,
+      "comments": 220,
+      "saves": 1480,
+      "engagement_score": 0.323,
+      "why_worked_hypothesis": "Contrarian + template promise, save magnet pattern"
+    },
+    {
+      "rank": 20,
+      "handle": "@example_studio_five",
+      "hook_verbatim": "How I run a 6-day gym schedule without ever opening a calendar app",
+      "archetype": "Authority + Curiosity-Gap + Specific-Cadence",
+      "likes": 3100,
+      "comments": 142,
+      "saves": 488,
+      "engagement_score": 0.234,
+      "why_worked_hypothesis": "Authority + curiosity gap + 'without ever opening' implies automation"
+    }
+  ],
+  "hook_pattern_summary": {
+    "most_common_archetype": "Specific-Number",
+    "most_common_count": 11,
+    "highest_scoring_archetype": "Problem-Aware",
+    "highest_scoring_avg_score": 0.679,
+    "underused_archetypes": [
+      "Pattern-Interrupt",
+      "Metaphor-Explainer",
+      "Myth-Bust"
+    ],
+    "notes": "Niche over-indexes on Specific-Number. Underused archetypes (Myth-Bust, Metaphor-Explainer) are likely outsized opportunities, the audience hasn't seen them yet."
+  },
+  "candidate_carousel_ideas_for_brand": [
+    {
+      "candidate_n": 1,
+      "draft_hook": "5 things you can stop doing once you give Claude your client notes",
+      "archetype": "Specific-Number + Authority",
+      "template_suggestion": "carousel-tips",
+      "content_angle": "Stop doing X, Y, Z manually, give your client log to Claude and reclaim the hour"
+    },
+    {
+      "candidate_n": 2,
+      "draft_hook": "The 1-page client check-in cheat sheet you should run every Monday",
+      "archetype": "Curiosity-Gap + Specific-Cadence",
+      "template_suggestion": "carousel-cheat-sheet",
+      "content_angle": "Single-page check-in framework, 6 questions, 1 metric, 1 next action"
+    },
+    {
+      "candidate_n": 3,
+      "draft_hook": "5 tools you can ditch when Claude becomes your operator",
+      "archetype": "Specific-Number + Stack-Reveal",
+      "template_suggestion": "carousel-stack-reveal",
+      "content_angle": "5 SaaS tools you're paying for that Claude Code replaces with a script"
+    },
+    {
+      "candidate_n": 4,
+      "draft_hook": "How one studio cut intake from 45 min to 12 min",
+      "archetype": "Case-Study + Specific-Number",
+      "template_suggestion": "carousel-case-study",
+      "content_angle": "Real client case study, the 3 prompts that compressed onboarding"
+    },
+    {
+      "candidate_n": 5,
+      "draft_hook": "Most PT advice on automation is wrong. Here's why",
+      "archetype": "Myth-Bust + Contrarian",
+      "template_suggestion": "carousel-myth-bust",
+      "content_angle": "5 automation myths that are eating your time"
+    },
+    {
+      "candidate_n": 6,
+      "draft_hook": "5 mistakes every PT makes when bolting AI onto their business",
+      "archetype": "Mistakes + Specific-Number",
+      "template_suggestion": "carousel-mistakes",
+      "content_angle": "The 5 most common AI-adoption mistakes for solo PTs (and the fix)"
+    },
+    {
+      "candidate_n": 7,
+      "draft_hook": "Your client database is an operator. Here's what that means",
+      "archetype": "Metaphor-Explainer + Reframe",
+      "template_suggestion": "carousel-metaphor-explainer",
+      "content_angle": "Reframe, your CRM isn't storage, it's an operator that needs prompts"
+    },
+    {
+      "candidate_n": 8,
+      "draft_hook": "The exact prompt that turns client notes into next week's program",
+      "archetype": "Prompt-Anatomy + Curiosity-Gap",
+      "template_suggestion": "carousel-prompt-anatomy",
+      "content_angle": "Walk through the XML prompt anatomy that powers the workflow"
+    }
+  ]
+}

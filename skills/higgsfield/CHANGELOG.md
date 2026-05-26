@@ -1,5 +1,79 @@
 # Changelog
 
+## v3.8.0, 2026-05-24
+
+### Added
+
+- **Six new sub-skills (Layer 2 workflow orchestrators)** built from a multi-agent research pass over 8 YouTube tutorials, the Hewitt `TheCraigHewitt/higgsfield-skills` repo, and a full overlap audit of Luke's 30+ adjacent skills. Each sub-skill follows the locked frontmatter convention (`name`, dense `description`, `user-invocable: true`, `metadata: {tags, version: 1.0.0, updated: 2026-05-24, parent: higgsfield}`) and pipes every text output through `content-engine` + `humanizer` as a mandatory ship-gate.
+  - `skills/higgsfield-content-factory/` (9 files, 2006 lines), 5-stage IG carousel pipeline. Hands rendering to `carousel-generator` (Selr brand carousels stay Remotion+Fraunces, Higgsfield supplies slide-4/7 supporting imagery only). Triggers on "run the content factory", "build my 60-day carousel calendar".
+  - `skills/higgsfield-ugc-ads/` (9 files, 2683 lines), multi-chunk product UGC ad pipeline (Alex Robinson pattern). Three-chat flow (hook brainstorm, multi-chunk script, Gemini critique loop), `@product` Element tagging for consistency, mandatory 720p iteration default. Triggers on "multi-chunk product UGC", "hook+chunks ad script".
+  - `skills/higgsfield-marketing-studio/` (9 files, 1807 lines), one-prompt-to-campaign orchestrator. Drives the no-prompt Marketing Studio URL→UGC flow and the 5-format multi-clip stitch (UGC, Tutorial, Unboxing, Product Review, CTA) to 45-60s spots. Triggers on "use higgsfield marketing studio", "stitch a multi-format ad".
+  - `skills/higgsfield-viral-replicator/` (12 files, 2296 lines), dual-path deconstruct-and-rebuild OR reviews-to-testimonial-ad. Apify-canonical (with `agent-browser` fallback and per-path fixtures). Path A ports Hewitt's 9-section deconstruction prompt. Path B implements the three-treatment template (talking-head, text-on-broll, side-by-side) with mandatory "Represents a customer profile" disclosure.
+  - `skills/higgsfield-cmo-agent/` (14 files, 4109 lines), brand brief → 8-stage multi-channel campaign with aggregated paste-ready Higgsfield prompts file (stage 7). Adapted from Hewitt's cmo-agent: AU-anchored outreach DMs, carousel handoff to `carousel-generator`, influencer handoff to `ghl-crm` + Notion, extended ban-list (no support promises, outcome guarantees, drop-in invites, personal life). Selr AI brand defaults auto-load from `selrai-business-model.md` + `brand-contact-urls.md`.
+  - `skills/higgsfield-ad-critic/` (1 file, 663 lines), Gemini frame-by-frame video critique loop. Parses Gemini's prose into named revision directives (`RESHOOT_SHOT`, `STRENGTHEN_HOOK`, `ADD_BROLL`, `RE_VOICE`). Credential lookup via `kp pass gemini-api-key`.
+- **Five shared assets** under `skills/shared/` (referenced by multiple sub-skills, never duplicated):
+  - `hook-bank-100.md`, 100 short-form video hooks organised by 10 archetypes
+  - `capcut-finishing.md`, post-production fixes (speed adjust, B-roll overlay, captions classic preset, brand colour map)
+  - `element-tagging.md`, `@product` Elements convention for multi-chunk consistency
+  - `vibe-motion-prompts.md`, 7 reusable Vibe Motion prompt recipes for SaaS UI motion
+  - `higgsfield-prompt-skeletons.md`, 5 canonical field-by-field prompt skeletons (image, video, carousel slide, viral rebuild, testimonial ad)
+
+### Changed
+
+- **Root `SKILL.md` routing table extended** with 6 new rows mapping triggers to the new sub-skills. Trigger language scoped narrowly to prevent collision with `carousel-generator`, `seedance-pipeline`, `ad-creative`, `content-marketer`.
+- **`higgsfield-mcp-setup` deprecated** (top-level, outside the higgsfield skill tree). Description now flags it as superseded by `higgsfield-connector` (OAuth-based, no Playwright dependency). File kept for cross-reference.
+- **External: `motion-graphic-reels/recipes/saas-explainer.md`** added, a 22-second SaaS explainer recipe usable from either the higgsfield path (default) or coded path. Per-beat prompts map to recipes in `shared/vibe-motion-prompts.md`. Lives outside the higgsfield skill tree but cross-references it.
+
+### Validated
+
+- `python3 validate.py` passes (frontmatter, paths, JSON schemas, all sub-skill refs resolve).
+- Em-dash scan: 0 across all new skills (Luke hard rule). 732 em-dashes auto-fixed across 3 skills during initial QA, 6+ more caught and removed during the second QA pass.
+- Shared-asset reference scan: all `../shared/*.md` refs resolve to existing files.
+- Ship-gate scan: all 6 skills reference `content-engine` + `humanizer`.
+
+### Second QA Pass (same day)
+
+- **Plain-English block added to all 6 SKILL.md files** at the top, right after the H1. Format: one-liner, "Use it when you want to" (4 use cases), "Don't use it for" (2 confusions pointing to alternatives), "Roughly" (cost / time / output), "Inputs you'll need" (3 inputs). Written for non-technical workshop attendees, plain-English asides on any unavoidable jargon.
+- **Workflow naming normalized within each skill** (no Stage/Phase/Step mixing). Convention per skill: ad-critic / content-factory / cmo-agent use Stage; ugc-ads uses Phase; marketing-studio / viral-replicator use Step.
+- **Two phantom skill references fixed:**
+  - `meta-ads` (not installed) → `paid-ads` + `meta-ads-mcp-setup` in `higgsfield-marketing-studio`
+  - `community-publishing-pipeline` (memory file, not skill) → `community-drop` (the implementing skill) across `higgsfield-cmo-agent` + `higgsfield-content-factory`
+- **`cinematic-ai-reels` cross-repo install:** the skill lives in `~/Projects/selr-claude-skills/skills/cinematic-ai-reels` (MEMORY.md says PRODUCTION v2.0) but was not at `~/.claude/skills/`. Symlinked into the active skill path so cross-skill refs in `higgsfield-ugc-ads`, `higgsfield-viral-replicator`, `higgsfield-content-factory` resolve at runtime.
+- **More relative-path corrections:** bare `shared/X.md` refs in subfolders (templates/, prompts/) corrected to `../../shared/X.md` (templates/ and prompts/ are one level deeper than SKILL.md). 5 fixes in `higgsfield-marketing-studio`.
+- **Output destination paths normalized** to `~/board/_active/<skill-name>-<YYYY-MM-DD>/` across all 6 skills (6 fixes in ugc-ads, 3 in ad-critic).
+- **Validator re-run after all QA changes: ALL CHECKS PASSED.**
+
+### End-to-end functional tests (2026-05-26)
+
+Six dispatched as parallel sub-agent runs. All passed.
+
+- **Test 1 cmo-agent for Selr AI** — 8 numbered docs (`00-brief.md` through `07-higgsfield-prompts.md`), 1,234 lines total, 4 segments with REPEAT/AMPLIFIER/NEITHER flags, 18 influencer handles with personalised DMs, 14 paste-ready Higgsfield prompts in Skeleton 1/2 format. Cost $0 (skill produces docs, not renders).
+- **Test 2 ad-critic** — frame-by-frame critique against an existing local MP4. Stubbed Gemini call. 95-line critique with verdict (REVISE), 6 named directives (`STRENGTHEN_HOOK`, `RESHOOT_SHOT`, `ADD_BROLL`, `RE_VOICE`, `ADJUST_TIMING`, `TIGHTEN_CTA`), revised Higgsfield prompt. Cost ~a few cents Gemini.
+- **Test 3 content-factory in fixture mode** — 11 files including 5 carousel-generator `template.json` files, 5 paste-ready captions, cost report. Higgsfield NOT used for slide rendering (handoff to `carousel-generator` clean). Cost $0.
+- **Test 4 viral-replicator with Kallaway fixture** — 9-section deconstruction, rebuild for Selr AI (PT-software-overload world, mechanic preserved, surface changed), handoff to `cinematic-ai-reels`. Cost $0.
+- **Test 5 ugc-ads structural** — 3-chunk UGC ad script for Selr AI workshop. 6 files including parseable multi-chunk YAML, 5 hook variations across 5 hook-bank archetypes, 3 Seedance 2.0 Skeleton 2 prompts with `@product` Element tagging on chunks 2 + 3, cost estimate 28-42 credits. Cost $0 (no actual render).
+- **Test 6 marketing-studio cheap_test structural** — 2-clip stitch plan (UGC hook + CTA), parseable format-mix YAML, 2 paste-ready clip prompts, custom-mint avatar strategy, 200-credit cost estimate. Cost $0 (no actual render). Caught bug, `multi-format-script.yaml` bare `9:16` would have YAML-1.1-coerced to integer 556. Quoted as `"9:16"`, validator green.
+
+### Live findings patched
+
+From the test sweep + the live Higgsfield account audit (Luke confirmed Ultra plan, 3,000 credits/mo, 5,533 banked, 8/8 parallel cap, 12 unlimited models active in Beta, top model = Higgsfield Soul with 302 generations):
+
+- **`carousel-tips/template.json`** — em dashes in `topic` + `_comment` fields replaced with colons across all 5 TIP slots + the CTA. Prevents em-dash poisoning of every production carousel run downstream of `higgsfield-content-factory`.
+- **`higgsfield-assist/SKILL.md`** plan table — stale Free / Basic / Pro / Ultimate replaced with current Free / Starter / Plus / Ultra / Business / Enterprise ladder, prices in AUD-friendly USD ranges (`$15` Starter through `$129` Ultra). Supercomputer-as-feature explainer added so workshop attendees do not confuse it with a plan tier.
+- **`higgsfield-ugc-ads/SKILL.md`** plain-English block — added explicit note that Plus is the minimum but Ultra unlocks 8/8 parallel + 365-day UNLIMITED Nano Banana Pro for product stills (essentially free Phase 1 on Ultra).
+- **`higgsfield-marketing-studio/SKILL.md`** plain-English block — added cheap_test framing (~200 credits) + Ultra perk note (UNLIMITED Nano Banana Pro means avatar mints are essentially free).
+- **`higgsfield-marketing-studio/templates/multi-format-script.yaml`** — bare `aspect: 9:16` quoted to `aspect: "9:16"` on all 5 clip slots. Prevents YAML 1.1 sexagesimal coercion (would have parsed as integer 556 in any consumer using PyYAML default loader).
+- Validator re-run after every patch: ALL CHECKS PASSED.
+
+### Open follow-ups (non-blocking, deferred to next bump)
+
+- `higgsfield-cmo-agent` Stage 7 image/video prompt-count minimum — relax for video-first campaigns (Test 1 hit this; the workshop reel campaign naturally produces a video-heavy mix).
+- Add `Nx ROI` / `Nx multiplier` patterns to the `content-engine` blocklist (Test 3 caught `12x ROI` slipping through).
+- Standardise ship-gate self-check syntax — wrap banned-vocab lists in code blocks or HTML comments so external grep gates do not false-positive (Test 4 hit this).
+- `higgsfield-ugc-ads` — add a pre-write voice-gate hook on authoring (Test 5 caught 9 em dashes during draft, manual cleanup worked but a structural fix would prevent recurrence).
+- `higgsfield-ugc-ads` — add a "compressed 3-chunk" framework alongside the existing mid-funnel-5 and full-stack-7 frameworks (Test 5 used a 3-chunk compression that is not yet canonical).
+- `higgsfield-marketing-studio/SKILL.md` Step numbering — Step 4 references file `05-assemble-and-ship.md`, skipping `04-avatar-strategy.md`. Re-number or note that Step 4 invokes both.
+
 ## v3.7.0 — 2026-05-04
 
 ### Changed

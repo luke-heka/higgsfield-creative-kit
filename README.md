@@ -88,7 +88,7 @@ See [`docs/pairing-with-other-skills.md`](docs/pairing-with-other-skills.md) for
 
 ## Support
 
-If install breaks, email `luke@selrai.com.au`. Built for the Selr AI workshop community.
+If install breaks, email `support@selrgroup.com.au`. Built for the Selr AI workshop community.
 
 ---
 

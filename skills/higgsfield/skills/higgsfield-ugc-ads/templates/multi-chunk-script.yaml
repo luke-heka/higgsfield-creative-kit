@@ -1,0 +1,185 @@
+# multi-chunk-script.yaml
+#
+# Canonical schema for a higgsfield-ugc-ads multi-chunk script.
+# Emitted by Chat 2 (prompts/02-multi-chunk-script.md).
+# Every per-chunk render block (chunks/chunk-{N}-prompt.md) is derived from
+# this file. Treat this file as the source of truth, if the chunks drift
+# from this YAML, regenerate from here, do not edit the chunks in place.
+#
+# Field reference is in the inline comments.
+
+# Human-readable identifier. Used in folder naming and reporting.
+# Format: "[Product name], [framework], [YYYY-MM-DD]"
+campaign_name: ""
+
+# CHARACTER LOCK
+# Fixed across every chunk. Editing this AFTER any chunk is rendered will
+# cause character drift on subsequent chunks, re-render all chunks if you
+# change anything here.
+character_lock:
+  # Age as a descriptive band, not a number ("early 40s" not "42").
+  # Higgsfield handles bands better than specific ages.
+  age: ""
+
+  # Gender presentation. Match the ICP.
+  gender: ""
+
+  # One paragraph. Must include the words "candid" and "natural", they're
+  # the UGC-look unlock from Py47FzLdF9E. Cover: hair, build, expression
+  # style, wardrobe, energy.
+  appearance: ""
+
+  # Higgsfield "Change Voice" name. Pick from the workspace's available
+  # voices. Apply this voice to every chunk via Change Voice after first
+  # render, do NOT let Seedance pick a different voice per chunk.
+  voice: ""
+
+  # If using Soul ID path (Phase 2, Path B), put the Soul ID string here.
+  # Null if using Higgsfield avatar by name (Path A) or uploaded reference
+  # (Path C).
+  soul_id: null
+
+  # Local path to the character reference image. Always exists, even if
+  # using Soul ID, keep a visual reference on disk for future audit.
+  reference_image_path: ""
+
+# UNIVERSAL DIRECTIONS
+# Pasted at the top of EVERY chunk render block. The "shared header" that
+# enforces consistency across chunks.
+universal_directions:
+  # Consistent hair style/colour/length across all chunks. Be specific
+  # ("shoulder-length brown, loosely tied back, slightly messy") not generic
+  # ("brown hair").
+  hair: ""
+
+  # How the character interacts with the product when it's in frame. Be
+  # specific about hand position, eye direction, body language. Avoid
+  # "naturally" alone, name the specifics that make it natural.
+  application: ""
+
+  # Secondary footage rules, light source, room, surface, depth of field.
+  # Match across every chunk that includes b-roll context.
+  b_roll: ""
+
+  # Non-negotiable UGC realism cues. Always include: "selfie handheld,
+  # slight wobble, imperfect framing, candid, no studio look, micro-pauses
+  # in delivery". Add product-specific cues as needed.
+  ugc_realism_notes: ""
+
+# CHUNKS
+# Ordered list. id is sequential starting at 1. role drives the script
+# structure. For mid-funnel punchy framework: hook / problem / solution /
+# proof / cta (5 chunks). For full-stack education: add agitation between
+# problem and solution, and mechanism between solution and proof (7 chunks).
+chunks:
+  - id: 1
+    # One of: hook, problem, agitation, solution, mechanism, proof, demo, cta
+    role: hook
+
+    # Exact voiceover line. Read by character_lock.voice. Apply Selr AI
+    # house style: no em dashes, no banned vocab, no outcome guarantees.
+    # Word count caps by role:
+    #   hook: ≤12 words
+    #   problem: ≤18 words
+    #   agitation: ≤22 words
+    #   solution: ≤18 words
+    #   mechanism: ≤28 words
+    #   proof: ≤25 words
+    #   demo: ≤20 words
+    #   cta: ≤15 words
+    voiceover: ""
+
+    # Seconds. Match the voiceover's natural delivery time. Do NOT let
+    # Seedance speed up delivery, reduce runtime here first if voiceover
+    # doesn't fit. Common values: 4, 6, 8, 10.
+    runtime: 4
+
+    # Either "@product" (or your product tag, @bottle, @app, etc.) or null.
+    # If null, REMOVE the tag from Higgsfield Elements panel BEFORE rendering
+    # this chunk, otherwise the model hallucinates the product into the shot.
+    product_tag: null
+
+    # Specific camera + body framing. Avoid "medium shot" alone, name the
+    # body part the camera focuses on and the angle.
+    framing: ""
+
+    # Boolean. Mirrors product_tag presence. Used by the per-chunk render
+    # block generator to set the EXCLUDE list correctly.
+    include_product: false
+
+  - id: 2
+    role: problem
+    voiceover: ""
+    runtime: 6
+    product_tag: null
+    framing: ""
+    include_product: false
+
+  - id: 3
+    role: solution
+    voiceover: ""
+    runtime: 6
+    product_tag: "@product"
+    framing: ""
+    include_product: true
+
+  - id: 4
+    role: proof
+    voiceover: ""
+    runtime: 8
+    product_tag: "@product"
+    framing: ""
+    include_product: true
+
+  - id: 5
+    role: cta
+    voiceover: ""
+    runtime: 4
+    product_tag: "@product"
+    framing: ""
+    include_product: true
+
+# FINAL CTA
+# Mirror of the last chunk for mid-funnel framework. For full-stack, this
+# may be a new line, usually just an on-screen URL overlay if the voiceover
+# CTA is already in the last chunk.
+final_cta:
+  # The final spoken line. Usually matches chunks[-1].voiceover for mid-funnel.
+  voiceover: ""
+
+  # Seconds. Default 4.
+  runtime: 4
+
+  # Optional overlay URL. Appears on-screen during the final chunk + 0.5s
+  # freeze-frame after. Leave empty if no URL overlay.
+  on_screen_url: ""
+
+# OUTPUT METADATA (populated by the skill, not the user)
+# These fields track which phase populated what, for auditability.
+_meta:
+  # Skill version that emitted this file.
+  skill_version: "1.0.0"
+
+  # ISO date when this file was first written.
+  created: ""
+
+  # Last update timestamp.
+  updated: ""
+
+  # Framework used. Either "mid-funnel-punchy" or "full-stack-education".
+  framework: "mid-funnel-punchy"
+
+  # Chat 1 hook archetype that won.
+  chosen_hook_archetype: ""
+
+  # Number of regenerate iterations across all chunks. Useful for
+  # post-mortem on credit spend.
+  total_regenerate_iterations: 0
+
+  # Final critic verdict. Either "GREEN-LIGHT" or "NOT-YET" or "PENDING".
+  critic_verdict: "PENDING"
+
+  # Ship-gate results. Both must be "PASS" to ship.
+  ship_gate:
+    content_engine: "PENDING"
+    humanizer: "PENDING"

@@ -1,0 +1,129 @@
+# Multi-Format Stitch Spec (YAML)
+#
+# Canonical schema for a Marketing Studio multi-clip campaign. Filled per run
+# and saved to <output>/01-format-list.md (rendered as a Markdown table) plus
+# stashed here for reproducibility.
+#
+# Use this when you want to script the campaign deterministically (e.g.
+# scheduling 10 product campaigns in a batch, each one fills this YAML, runs
+# the skill, ships the bundle).
+
+campaign:
+  # Slug for filenames + folder. Lowercase, hyphens only.
+  slug: <product-slug>-<YYYY-MM-DD>
+
+  # The product URL Marketing Studio scrapes. Must have rich landing copy.
+  product_url: https://example.com/product/<sku>
+
+  # Free text product name (as scraped or manually set).
+  product_name: <product name>
+
+  # awareness | conversion | retention
+  goal: conversion
+
+  # default | custom_mint | soul_id_<name>
+  avatar: custom_mint
+
+  # If avatar = custom_mint, the verbatim text prompt used to mint.
+  avatar_mint_prompt: >
+    <prompt text>
+
+  # If avatar = soul_id_*, the Higgsfield Soul ID slug.
+  soul_id_slug: ""
+
+  # cheap_test | full_stitch
+  tier: cheap_test
+
+  # Output folder (absolute path).
+  output_folder: ~/board/_active/marketing-studio-<YYYY-MM-DD>/
+
+clips:
+  # Each clip is rendered in Marketing Studio with: same product + same avatar
+  # + format swap. CTA is the exception (rendered via direct Seedance).
+  #
+  # role: hook | demonstrate | proof | social_proof | action
+  # format: ugc | tutorial | unboxing | product_review | ugc_try_on_haul | cta
+
+  - n: 1
+    format: ugc
+    duration_s: 15
+    role: hook
+    resolution: 720p   # 720p for cheap_test, 1080p for full_stitch
+    aspect: "9:16"
+    avatar_locked: true
+    output_file: clip-1-ugc.mp4
+    prompt: ""   # Marketing Studio is no-prompt, leave empty for clips 1-4
+
+  - n: 2
+    format: tutorial
+    duration_s: 15
+    role: demonstrate
+    resolution: 720p
+    aspect: "9:16"
+    avatar_locked: true
+    output_file: clip-2-tutorial.mp4
+    prompt: ""
+
+  - n: 3
+    format: unboxing
+    duration_s: 10
+    role: proof
+    resolution: 720p
+    aspect: "9:16"
+    avatar_locked: false   # hands-only, no face
+    output_file: clip-3-unboxing.mp4
+    prompt: ""
+
+  - n: 4
+    format: product_review
+    duration_s: 15
+    role: social_proof
+    resolution: 720p
+    aspect: "9:16"
+    avatar_locked: true
+    output_file: clip-4-review.mp4
+    prompt: ""
+
+  - n: 5
+    format: cta
+    duration_s: 5
+    role: action
+    resolution: 720p
+    aspect: "9:16"
+    avatar_locked: true   # MUST match clips 1, 2, 4 avatar for face continuity
+    output_file: clip-cta.mp4
+    # CTA prompt is REQUIRED, generated via direct Seedance, not Marketing
+    # Studio. Fill from templates/cta-clip-prompt.md AFTER content-engine +
+    # humanizer gates pass on the CTA copy.
+    prompt: >
+      <filled CTA prompt, see templates/cta-clip-prompt.md>
+
+total_duration_s: 60   # Sum of all clip durations
+
+# Estimated credit spend at chosen resolution + avatar.
+estimated_credits: 875
+estimated_usd: 10.50
+
+# Voice + slop gates applied to: caption, CTA copy, any on-screen text.
+voice_gates:
+  - content-engine
+  - humanizer
+
+banned_vocab:
+  - game-changer
+  - 10x
+  - crushing it
+  - killing it
+  - secret sauce
+  - level up
+  - unlock
+  - transform
+
+banned_punctuation:
+  - em dash
+
+ship_bundle:
+  final_ad: final-ad.mp4
+  caption: caption.md
+  cost_log: cost-log.md
+  critic_report: critic-report.md

@@ -43,4 +43,4 @@ After Claude finishes, you'll have:
 - A full Soul ID training workflow doc.
 - Pairing guides for combining Higgsfield with carousel-generator, copywriting, and ad-creative skills.
 
-If anything breaks, email `luke@selrai.com.au`.
+If anything breaks, email `support@selrgroup.com.au`.

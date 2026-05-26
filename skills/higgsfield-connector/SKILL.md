@@ -246,4 +246,4 @@ Do NOT tell the user "done" until every box is ticked:
 
 ---
 
-*Built by Selr AI. If Higgsfield's MCP changes and this flow breaks, email luke@selrai.com.au.*
+*Built by Selr AI. If Higgsfield's MCP changes and this flow breaks, email support@selrgroup.com.au.*

@@ -135,6 +135,12 @@ budget constraints, client work), **confirm before generating:**
 | Pre-generation memory check, apply past failure fixes | `higgsfield-recall` |
 | Audio design, dialogue cues, SFX, ambient sound | `higgsfield-audio` |
 | Seedance 2.0 / Pro prompt, flagged prompt, credit waste on Seedance | `higgsfield-seedance` |
+| 5-stage IG carousel pipeline, 60-day calendar, batch-generate carousels | `higgsfield-content-factory` |
+| Multi-chunk product UGC ad (Alex Robinson pattern), `@product` Element tag, hook+chunks script | `higgsfield-ugc-ads` |
+| One-prompt-to-campaign from product URL, no-prompt Marketing Studio, multi-format stitch ad | `higgsfield-marketing-studio` |
+| Deconstruct a viral IG/TikTok/YT-Short and rebuild for brand, OR turn G2/Trustpilot reviews into a testimonial ad | `higgsfield-viral-replicator` |
+| Full multi-channel campaign from brand brief (segments, channels, creative, launch, social, influencers) | `higgsfield-cmo-agent` |
+| Critique a rendered Higgsfield video (Gemini frame-by-frame), produce revision directive | `higgsfield-ad-critic` |
 
 ---
 
