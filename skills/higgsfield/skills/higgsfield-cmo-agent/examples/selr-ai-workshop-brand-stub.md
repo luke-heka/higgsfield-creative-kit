@@ -15,7 +15,7 @@
 - **Name:** Selr AI
 - **Category:** AI implementation + community for AU SMB operators and
   AI practitioners
-- **Founder:** Selr AI founder + technical co-deliverer
+- **Founder:** Selr AI founder + technical lead (co-deliver)
 - **Voice:** Confident, direct, AU English, no hype. Operator-to-operator.
 - **Language:** AU English (colour, optimise, specialise, organisation).
 
@@ -130,7 +130,7 @@ post-workshop.
 - Workshops: [workshop.selrai.com.au](https://workshop.selrai.com.au)
 - Selr AI: [@selr__ai](https://instagram.com/selr__ai)
 
-Made by Selr AI. Part of how I run my business every day.
+Made by Selr AI. Part of how we run our business every day.
 ```
 
 ## References (Visual + Voice)

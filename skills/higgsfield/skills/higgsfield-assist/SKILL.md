@@ -71,16 +71,21 @@ for final in-platform prompt refinement and quick generation.
 
 ### Understanding Credits
 
-| Plan | Monthly credits | Cost | Best for |
-|------|----------------|------|----------|
-| Free | 25 | $0 | Testing only |
-| Basic | 150 | $6/mo (annual) | Hobby / light use |
-| Pro | 700 | $27/mo (annual) | Regular creators |
-| Ultimate | 1,500 | $55/mo (annual) | Daily production |
+| Plan | Monthly credits | Annual price | Parallel video / image | Highlights |
+|------|----------------|-------|------------------------|------------|
+| Free | (limited) | $0 | n/a | Testing only |
+| Starter | 200 | $15/mo | 2 / 4 | Selected models only |
+| Plus | 1,000 | $39/mo (20% OFF) | 6 / 8 | Nano Banana 2 + Kling 3.0 UNLIMITED |
+| Ultra (MOST POPULAR) | 3,000 | $99/mo (23% OFF) | 8 / 8 | Nano Banana Pro + 2 + Kling 3.0 UNLIMITED, Claude Opus 4.7 access |
+| Business (BEST VALUE) | 1,500 per seat | $62/seat/mo (30% OFF) | 16 / 16 | 2-15 members, shared credit pool, SSO |
+| Enterprise | custom | custom | n/a | Dedicated capacity, contact sales |
 
-**Commercial rights:** Basic and above.  
-**Watermarks:** Free tier only.  
-**Priority processing:** Pro and above.
+**Supercomputer (AI orchestration layer)** is included in every plan, not a separate tier. Allowances scale with plan: storage 100 MB (Starter) → 5 GB (Ultra), scheduled jobs 0 → 10, parallel chats 0 → 10, Claude Opus 4.7 access on Ultra and above.
+
+**Commercial rights:** Starter and above.
+**Watermarks:** Free tier only.
+**Priority processing:** Plus and above.
+**Verified:** 2026-05-26 from higgsfield.ai/pricing live capture. Re-verify quarterly.
 
 ### Credit Cost Tiers (Approximate)
 

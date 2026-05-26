@@ -45,6 +45,16 @@ metadata:
 - Campaign goal: awareness, conversion, or retention
 - Optional: a custom avatar look (recommended over the default library)
 
+## Starter packs
+
+Three preconfigured business-owner packs ship with this skill. Pick your industry, paste your URL, render:
+
+- [`starter-packs/dtc-shopify/`](starter-packs/dtc-shopify/), 5-clip stitch (UGC + Tutorial + Unboxing + Review + CTA) from a Shopify product URL.
+- [`starter-packs/saas-landing/`](starter-packs/saas-landing/), 4-clip stitch (UGC + Tutorial + Demo + CTA) from a SaaS landing page. Live screen recording composited separately.
+- [`starter-packs/course-creator/`](starter-packs/course-creator/), 4-clip stitch (UGC + Tutorial + Story + CTA) from a course sales page. No income claims.
+
+See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs.
+
 ---
 
 ## What This Skill Does

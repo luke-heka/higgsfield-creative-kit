@@ -61,6 +61,16 @@ metadata:
 - Path B, a G2 or Trustpilot reviews page URL OR pasted review text (2 or more reviews)
 - Your brand voice (auto-loaded from memory for Selr AI, ask once for any other brand)
 
+## Starter packs
+
+Three preconfigured business-owner packs ship with this skill. Each comes with real-creator viral references for that industry:
+
+- [`starter-packs/dtc-product-launch/`](starter-packs/dtc-product-launch/), DTC product launch rebuild. References: NUDE, OLIPOP.
+- [`starter-packs/coach-hook-reel/`](starter-packs/coach-hook-reel/), online coach hook reel rebuild. References: Greg Isenberg, Justin Welsh, Hormozi.
+- [`starter-packs/saas-feature-demo/`](starter-packs/saas-feature-demo/), indie SaaS feature demo rebuild. References: Marc Lou, Pieter Levels.
+
+See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs.
+
 ---
 
 Two paths, same destination. Either deconstruct a viral video and rebuild

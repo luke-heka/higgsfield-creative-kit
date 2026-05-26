@@ -49,6 +49,16 @@ metadata:
 - Your brand voice in 1-2 sentences (or defaults to Selr AI house voice).
 - A batch size, default 5 carousels per batch.
 
+## Starter packs
+
+Three preconfigured business-owner packs ship with this skill. Pick your industry, fill 3-5 fields, ship a 60-day calendar:
+
+- [`starter-packs/dtc-ecommerce/`](starter-packs/dtc-ecommerce/), Shopify operator 60-day calendar weighted to proof + demos. US English.
+- [`starter-packs/personal-trainer/`](starter-packs/personal-trainer/), solo PT + gym owner 60-day calendar weighted to mistakes + tips. AU English.
+- [`starter-packs/real-estate-agent/`](starter-packs/real-estate-agent/), solo AU agent 60-day calendar weighted to case-study + suburb cheat-sheets. AU English.
+
+See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs across all 6 sub-skills.
+
 ---
 
 A gated 5-stage IG carousel production pipeline. Built for Selr AI's existing

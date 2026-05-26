@@ -45,6 +45,16 @@ metadata:
 - One sentence on what the product does and who it's for (the buyer in plain English).
 - Optional: a specific person you want as the on-screen presenter (named Higgsfield avatar, your own Soul ID, or a one-off generated character).
 
+## Starter packs
+
+Three preconfigured business-owner packs ship with this skill. Pick your industry, fill the multi-chunk-script variables, render:
+
+- [`starter-packs/dtc-ecommerce/`](starter-packs/dtc-ecommerce/), DTC product UGC ad, bathroom/kitchen avatar, no medical claims.
+- [`starter-packs/personal-trainer/`](starter-packs/personal-trainer/), solo PT or gym owner UGC, gym-floor `@trainer` tag, no weight-loss numbers. AU.
+- [`starter-packs/local-service-trade/`](starter-packs/local-service-trade/), plumber/electrician/cafe/hairdresser UGC, owner-on-site avatar. AU.
+
+See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs.
+
 ---
 
 Multi-chunk UGC ad pipeline. Product URL + brand brief → a chunked script with

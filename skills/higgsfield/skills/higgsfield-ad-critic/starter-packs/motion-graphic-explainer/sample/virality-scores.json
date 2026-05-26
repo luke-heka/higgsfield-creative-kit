@@ -1,0 +1,29 @@
+{
+  "source_video": "example-ad.mp4",
+  "source_industry": "Indie SaaS, founder-led demo (Marc-Lou / Pieter-Levels style)",
+  "model": "brain_activity (Higgsfield virality_predictor)",
+  "scores": {
+    "overall_score": 52,
+    "viral_potential": 50,
+    "brain_engagement": 45,
+    "hook_score": 40,
+    "sustain_score": 92,
+    "peak_score": 0.493653,
+    "peak_second": 3
+  },
+  "regions": {
+    "visual_cortex": {"mean": 0.49, "peak": 0.54, "peak_at_sec": 0},
+    "auditory_temporal": {"mean": 0.40, "peak": 0.49, "peak_at_sec": 3},
+    "language_network": {"mean": 0.41, "peak": 0.47, "peak_at_sec": 3},
+    "frontoparietal_attention": {"mean": 0.52, "peak": 0.59, "peak_at_sec": 6},
+    "default_mode_lower_better": {"mean": 0.62, "peak": 0.71, "peak_at_sec": 5, "interpretation": "Default Mode HIGH throughout = sustained mind-wandering. Demo lands at sec 3 but interest dies at sec 4-5"}
+  },
+  "verdict": "REVISE",
+  "named_directives": [
+    "STRENGTHEN_HOOK",
+    "TIGHTEN_PACING",
+    "ADD_PROOF_EARLIER",
+    "RESHOOT_MID"
+  ],
+  "summary": "SaaS founder demo: hook_score 40/100 (LOW). Default Mode persistently HIGH except at second 3 (the demo reveal). Frontoparietal attention only peaks at sec 6 (the end frame). Recommend cutting the laptop-pivot setup, leading with the demo content as frame 0, and adding a result-receipt at second 2. Compress 6s to 4s."
+}

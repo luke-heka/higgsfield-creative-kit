@@ -1,0 +1,29 @@
+{
+  "source_video": "example-ad.mp4",
+  "source_industry": "DTC ecommerce, supplement UGC hook",
+  "model": "brain_activity (Higgsfield virality_predictor)",
+  "scores": {
+    "overall_score": 50,
+    "viral_potential": 52,
+    "brain_engagement": 50,
+    "hook_score": 38,
+    "sustain_score": 100,
+    "peak_score": 0.531967,
+    "peak_second": 4
+  },
+  "regions": {
+    "visual_cortex": {"mean": 0.39, "peak": 0.45, "peak_at_sec": 0},
+    "auditory_temporal": {"mean": 0.62, "peak": 0.66, "peak_at_sec": 0},
+    "language_network": {"mean": 0.56, "peak": 0.60, "peak_at_sec": 0},
+    "frontoparietal_attention": {"mean": 0.57, "peak": 0.63, "peak_at_sec": 4},
+    "default_mode_lower_better": {"mean": 0.59, "peak": 0.68, "peak_at_sec": 1, "interpretation": "spike at sec 1 = mind-wandering during hook"}
+  },
+  "verdict": "REVISE",
+  "named_directives": [
+    "STRENGTHEN_HOOK",
+    "RESHOOT_SHOT",
+    "RE_VOICE",
+    "TIGHTEN_CTA"
+  ],
+  "summary": "DTC supplement UGC hook lands a hook_score of 38/100 (LOW). Default Mode (mind-wandering) spikes at second 1 of the hook window, confirming the soft opening loses viewer brain engagement before the punchline. Peak engagement only arrives at second 4 (the punchline frame). Recommend frontloading the contrarian / pain-aware word to sec 1.5."
+}

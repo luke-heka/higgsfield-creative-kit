@@ -139,9 +139,9 @@ For each carousel with a ManyChat CTA:
 - ❌ Don't bypass the user approval gate. Even after Stage 3 "done",
   Stage 4 needs its own "yes proceed".
 - ❌ Don't push to public IG without showing the user the final caption
-  + slide previews once more. Per Luke's "show before any blast" rule.
-- ❌ Don't push to the founder's personal IG (it stays manual)
-  manually. Default workspace = Selr AI.
+  + slide previews once more. Per the "show before any blast" rule.
+- ❌ Don't push to the user's personal IG handle, they post there
+  manually. Default workspace = the business brand account.
 
 ## MCP / dependency calls
 

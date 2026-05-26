@@ -45,6 +45,16 @@ metadata:
 - One sentence on who the ad is for and what action you want viewers to take
 - Optional: which iteration this is, so the critic can compare to last time
 
+## Starter packs
+
+Three reference critique packs ship with this skill, each demonstrating a common failure mode in that ad format:
+
+- [`starter-packs/ugc-product-ad/`](starter-packs/ugc-product-ad/), DTC UGC product ad critique. Common failure: weak soft hook + head morph.
+- [`starter-packs/founder-talking-head/`](starter-packs/founder-talking-head/), coach founder-led video critique. Common failure: stiff scripted delivery.
+- [`starter-packs/motion-graphic-explainer/`](starter-packs/motion-graphic-explainer/), SaaS motion-graphic explainer critique. Common failure: pacing too slow.
+
+See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs across all 6 sub-skills.
+
 ---
 
 A second-opinion critic for Higgsfield video renders. Built on Edmund

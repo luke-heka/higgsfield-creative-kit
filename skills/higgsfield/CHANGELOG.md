@@ -1,5 +1,27 @@
 # Changelog
 
+## v3.9.0, 2026-05-27
+
+### Added
+
+- **18 industry starter packs** across the 6 sub-skills (3 packs per skill). Each pack is a self-contained folder under `skills/<skill>/starter-packs/<industry>/` with a preconfigured brief, paste-ready Higgsfield prompts, a 60-second README, and at least one real rendered sample (video or image). A small business owner can pick their industry, fill 3 `{{PLACEHOLDER}}` fields in `brief.md`, paste the matching prompt, and render a working ad in under 10 minutes.
+  - `higgsfield-content-factory/starter-packs/`: `dtc-ecommerce`, `personal-trainer`, `real-estate-agent`
+  - `higgsfield-ugc-ads/starter-packs/`: `dtc-ecommerce`, `personal-trainer`, `local-service-trade`
+  - `higgsfield-marketing-studio/starter-packs/`: `dtc-shopify`, `saas-landing`, `course-creator`
+  - `higgsfield-viral-replicator/starter-packs/`: `dtc-product-launch`, `coach-hook-reel`, `saas-feature-demo`
+  - `higgsfield-cmo-agent/starter-packs/`: `dtc-product-drop`, `coach-course-launch`, `local-service-opening`
+  - `higgsfield-ad-critic/starter-packs/`: `ugc-product-ad`, `founder-talking-head`, `motion-graphic-explainer` (each ships `example-ad.mp4`, `critique.md` from real `virality_predictor` output, `revision-prompt.md`, and the virality dashboard HTML + scores JSON)
+- **`skills/STARTER-PACKS.md`** top-level index. Lists all 18 packs grouped by skill and cross-grouped by industry, with one-line descriptions and links into each pack folder.
+- **"Starter packs" routing block in each of the 6 `SKILL.md` files**, sitting under the plain-English block. Lists the 3 packs for that skill with their use case in one line each, so a workshop attendee reading the SKILL.md sees the preconfigured option before the full workflow.
+
+### Validated
+
+- 22 real sample renders committed across the 18 packs (mix of Seedance 2.0 videos, Nano Banana 2 images, Marketing Studio stitches, and `virality_predictor` dashboards). Total render spend: ~950 credits of the Ultra balance.
+- Marketing Studio scrape verified on 3 different URL shapes (Allbirds product page, Notion landing page, Justin Welsh creator site). Selr-AU URLs fail scrape (documented finding from v3.8.0 testing).
+- `python3 validate.py` returned ALL CHECKS PASSED.
+- Em-dash scan: 0 across all 18 new pack folders (Luke hard rule).
+- PII scan: 0 hits on the new pack folders against the standard Selr kit-index PII firewall pattern.
+
 ## v3.8.0, 2026-05-24
 
 ### Added

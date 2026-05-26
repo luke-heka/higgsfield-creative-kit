@@ -56,6 +56,16 @@ metadata:
 - A campaign goal: awareness / launch / repositioning / retention (or for Selr AI runs: workshop registrations / Skool conversions / ASA pipeline)
 - Optional: tone or visual reference brands, a target city or date window, and any hard exclusions (visuals you don't want, claims you won't make, channels you won't run)
 
+## Starter packs
+
+Three preconfigured business-owner packs ship with this skill. Each is a full 8-stage launch:
+
+- [`starter-packs/dtc-product-drop/`](starter-packs/dtc-product-drop/), DTC product drop + awareness launch. Meta + TikTok primary.
+- [`starter-packs/coach-course-launch/`](starter-packs/coach-course-launch/), course launch with cart open/close. Email + organic IG + long-form YouTube. No income claims.
+- [`starter-packs/local-service-opening/`](starter-packs/local-service-opening/), grand opening for a local trade or hospo business. TikTok Local Feed + Google Business. AU.
+
+See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs.
+
 ---
 
 Take a brand brief and produce a launch-ready multi-channel marketing campaign
