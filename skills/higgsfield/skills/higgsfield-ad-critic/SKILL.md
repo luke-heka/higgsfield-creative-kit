@@ -60,7 +60,7 @@ See [`../STARTER-PACKS.md`](../STARTER-PACKS.md) for the full index of 18 packs 
 A second-opinion critic for Higgsfield video renders. Built on Edmund
 Yong's Gemini feedback loop (`xyKxB8q7wQk`, "How I Make Marketing Ads
 for My Apps SOLO"), reconciled with Selr AI house style and the
-voice ship-gate (a final check that copy sounds like Luke, not AI)
+voice ship-gate (a final check that copy sounds like your brand, not AI)
 convention (`content-engine` + `humanizer`).
 
 The skill does NOT generate video. It reviews video. The output is a
@@ -103,7 +103,7 @@ Do NOT invoke this skill for:
 |-------|----------|-----------|
 | `video_path` | yes | Absolute path to the rendered MP4 (Higgsfield download, CapCut export, or any video file <2GB). |
 | `intent_brief` | optional | One paragraph: who the ad is for, what action it should drive, which Higgsfield prompt was used, which iteration this is. If omitted, Claude asks one short clarifying question before running. |
-| `brand` | optional | "Selr AI", "personal", or a client tag. Defaults to "Selr AI" and applies Luke's voice rules. |
+| `brand` | optional | "Selr AI", "personal", or a client tag. Defaults to "Selr AI" and applies your brand voice rules. |
 | `iteration` | optional | Integer. Used in the output filename and lets the critic compare against prior critiques in `~/board/_active/`. |
 
 Validate first:
@@ -316,7 +316,7 @@ After saving, append a one-line entry to `~/board/_log.md`:
 ## Voice ship-gate
 
 The Gemini critique is FACT (frame-by-frame observation). The revision
-directive and the revised Higgsfield prompt are COPY (something Luke or
+directive and the revised Higgsfield prompt are COPY (something you or
 the team will see and act on). Copy must pass the Selr AI voice gate.
 
 Run the body text of the critique file through both, IN ORDER, before

@@ -42,7 +42,7 @@ Fill EVERY field. Special attention for coach reels:
   save-bait (one screenshot-able framework line). Name which.
 
 For Greg Isenberg style references specifically:
-- Cross-reference ~/.claude/projects/-Users-luke/memory/gregisenberg-script-formula.md
+- Cross-reference a proven short-form hook formula (your own swipe file or a creator framework you trust)
   for the 7-beat skeleton
 - Identify which of Greg's 6 hook archetypes applies (or note "new variant")
 - Tag the motion-graphic primitives from ~/.claude/skills/motion-graphic-reels/references/motion-vocabulary.md
@@ -116,7 +116,7 @@ Rebuild rules:
   {{BRAND_NAME}}'s real evidence (do we have a Stripe receipt? a real
   client outcome? a real install count?)
 - Resist on-the-nose. If the original was Greg breaking down a
-  community-business framework, don't rebuild as "Luke breaks down a
+  community-business framework, don't rebuild as "the founder breaks down a
   community-business framework". Translate the mechanic to Selr AI's
   real domain (workshop installs, AI-ops, GHL setups).
 
@@ -139,13 +139,13 @@ Coach reel handoff selection rule:
 |---|---|
 | Greg-style motion-graphic typography (Fraunces text, named primitives, no face) | motion-graphic-reels |
 | Direct-to-camera coach, AI face (rebuilt for a brand that isn't filming themselves) | cinematic-ai-reels |
-| Direct-to-camera coach, real face (brand is filming themselves, e.g. Luke for Selr AI) | frontcam-reels |
+| Direct-to-camera coach, real face (brand is filming themselves, e.g. a founder filming for their own brand) | frontcam-reels |
 | Mixed (face plus motion-graphic overlays) | cinematic-ai-reels + motion-graphic-reels overlay pass (or frontcam-reels + motion-graphic-reels for Selr AI) |
 
 Fallback rule: if cinematic-ai-reels is not installed, route to
 frontcam-reels and document the deviation in handoff.md.
 
-Selr AI override: Luke films himself, so for any Selr AI rebuild
+Selr AI override: the founder films themselves, so for any Selr AI rebuild
 default to frontcam-reels (real face) with a motion-graphic-reels
 overlay pass for any on-screen text or branded primitives.
 

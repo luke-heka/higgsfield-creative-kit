@@ -64,7 +64,7 @@ Once you've made one piece in each format, the workflow gets fast:
 1. **Lock your Soul ID + winning seed.** Every series uses the same seed for visual consistency.
 2. **Make 5-10 variants of your best piece.** Same template, change one variable each time (light, angle, mood, lens).
 3. **Pair the visuals with copy.** Pipe the best images/videos to `copywriting` or `direct-response-copy` skill for captions and hooks.
-4. **Drop into a carousel.** Use `carousel-generator` skill (or Luke's carousel kit if you've installed that) to render branded multi-slide carousels from your image set.
+4. **Drop into a carousel.** Use `carousel-generator` skill (or a carousel kit if you've installed that) to render branded multi-slide carousels from your image set.
 5. **Strip AI-tone from any captions.** Run captions through `humanizer` or `avoid-ai-writing` skill before publishing.
 6. **Publish.** Use `social-content` skill for multi-platform scheduling.
 

@@ -79,7 +79,7 @@ Both paths terminate in a paste-ready Higgsfield prompt plus a hand-off
 to the appropriate Selr AI reel assembly skill.
 
 This is the MOST GREEN-FIELD of the planned Higgsfield sub-skills,
-nothing else in Luke's stack does deconstruct-then-rebuild or
+nothing else in your stack does deconstruct-then-rebuild or
 reviews-to-video-script.
 
 ---
@@ -270,8 +270,8 @@ is for? One sentence."
 
 Defaults if the brand is Selr AI:
 
-- Load Selr AI voice from `~/.claude/projects/-Users-luke/memory/selrai-business-model.md`
-- Load Selr AI URLs from `~/.claude/projects/-Users-luke/memory/brand-contact-urls.md`
+- Load your brand voice from your own brand brief or notes (or describe your tone inline when you run the skill)
+- Load your brand links from your own notes (or paste them inline when you run the skill)
 - Apply the no-em-dash, no-outcome-guarantee, no-support-promise rules
   automatically
 

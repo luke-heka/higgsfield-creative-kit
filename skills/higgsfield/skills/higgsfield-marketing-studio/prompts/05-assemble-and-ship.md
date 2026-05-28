@@ -92,8 +92,8 @@ Before ship, every text artifact passes through both gates:
 
 ### The gates
 
-1. `content-engine`, verified Luke voice filter. Output must read as
-   Luke / Selr AI, not generic AI prose.
+1. `content-engine`, your verified brand voice filter. Output must read as
+   your brand, not generic AI prose.
 2. `humanizer`, 21-category AI writing pattern scrubber + slop blocklist.
 
 ### Banned vocab (auto-fail)

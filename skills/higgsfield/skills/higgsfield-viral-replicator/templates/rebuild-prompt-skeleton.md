@@ -52,7 +52,7 @@ smiles, on-the-nose product hero shots, generic agency aesthetic
 camera, delivers one-sentence promise, walks away.
 
 **Surface changed:** original was a man in canvas jacket at a remote
-trailhead with a tumbler, rebuild is Luke at a workshop room with a
+trailhead with a tumbler, rebuild is the founder at a workshop room with a
 notebook.
 
 **Selr AI palette applied:** cream walls, dark wood, single purple
@@ -60,7 +60,7 @@ accent.
 
 ```
 6 seconds 9:16 vertical, named-character-enters-and-delivers
-mechanic (same as reference), Luke walks into a quiet workshop room at
+mechanic (same as reference), the founder walks into a quiet workshop room at
 end of day, sets a notebook down on the table, looks directly at the
 camera and says one sentence about the workshop, then walks toward the
 door,
@@ -70,7 +70,7 @@ slow handheld push-in covering ~6 inches over the duration,
 50mm equivalent shallow depth of field background gently out of focus,
 palette: cream walls, dark wood table, single purple notebook accent,
 fine 16mm film grain with mild halation,
-audio intent: ambient room tone and Luke's voice direct unhurried no music,
+audio intent: ambient room tone and the founder's voice direct unhurried no music,
 brand visibility: notebook stays in frame from 0:02 onward, Selr AI
 purple cover readable in the final 1.5s,
 EXCLUDE: drone shots, aerial angles, stock office sets, gradient

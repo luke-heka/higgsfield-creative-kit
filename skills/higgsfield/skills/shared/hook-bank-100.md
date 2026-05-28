@@ -10,7 +10,7 @@ Loaded by `higgsfield-ugc-ads`, `higgsfield-marketing-studio`,
 > **How to use:** pick an archetype that matches the angle of the content,
 > then pick a hook line and substitute the bracketed variables. Always
 > voice-grade through `content-engine` before locking — some patterns
-> need rephrasing for Luke's voice (no em dashes, no "game-changer", no
+> need rephrasing for your brand voice (no em dashes, no "game-changer", no
 > outcome promises).
 
 ---
@@ -189,7 +189,7 @@ Lead with a strong emotional state that triggers mirroring.
 
 - **No em dashes.** Use comma or full stop.
 - **No "game-changer", "10x", "crushing it", "killing it", "secret sauce", "level up", "unlock", "transform"** — pipe through `content-engine` blocklist.
-- **No outcome guarantees** ("you WILL...", "guaranteed to...", "the only way to...") — Luke's hard rule.
+- **No outcome guarantees** ("you WILL...", "guaranteed to...", "the only way to...") — a hard brand rule.
 - **No "drop in" / "swing past" / "say hi" CTAs.**
 - **No personal-life-in-marketing** — hooks like "my [FAMILY MEMBER] asked me" are off-limits for Selr AI brand. Use business-context substitute ("a client asked me", "a workshop attendee asked me").
 - **AU English** ("colour" not "color", "optimise" not "optimize", "specialise" not "specialize").
@@ -211,6 +211,6 @@ Lead with a strong emotional state that triggers mirroring.
 Curated from common viral patterns observed across IG/TikTok/Shorts
 short-form content (2024-2026), Alex Robinson's "100 viral TikTok hooks"
 reference (Reddit-scraped, mentioned in his UGC tutorial), and 30+
-content-creator brain skills in Luke's stack
+content-creator brain skills in your stack
 (`alex-hormozi-content-method`, `gregisenberg-script-formula`,
 `brendan-kane-method`, `dan-koe-method`, `justin-welsh-method`, etc.).

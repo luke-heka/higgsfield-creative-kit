@@ -37,7 +37,6 @@ metadata:
 
 **Don't use it for:**
 - A single one-off carousel → use `carousel-generator` plus one of the 15 `carousel-*` template skills.
-- A full multi-channel campaign across IG plus YouTube plus ads → use `higgsfield-cmo-agent`.
 
 **Roughly:**
 - $9-$24 USD per batch of 5 carousels in Higgsfield credits (only if a batch needs supporting AI images, most batches need zero).
@@ -253,7 +252,7 @@ CTAs):
   you're nearby".
 - **No refund / money-back / satisfaction guarantees.**
 - **AU English.** "Optimise" not "optimize", "colour" not "color".
-- **No personal life of Luke's** in marketing copy.
+- **No the founder's personal life** in marketing copy.
 
 ---
 

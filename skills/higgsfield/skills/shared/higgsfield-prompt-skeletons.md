@@ -84,7 +84,7 @@ brand cues: [...], EXCLUDE: stock photo people, gradient background,
 emoji, drop shadows, hashtag overlays, watermark
 ```
 
-> **Important for Luke's stack:** Higgsfield-rendered carousel slides
+> **Important for your stack:** Higgsfield-rendered carousel slides
 > are **NOT** the preferred path for Selr AI brand carousels. The house
 > style is Remotion + Fraunces hand-typeset via `carousel-generator`.
 >
@@ -137,14 +137,14 @@ Rebuild (for Selr AI):
 
 ```
 6 seconds 9:16, named-character-enters-and-delivers-one-sentence mechanic
-(same as reference), Luke walks into a quiet workshop room at end of day,
+(same as reference), the founder walks into a quiet workshop room at end of day,
 sets a notebook down on the table looks directly at the camera and says
 one sentence about the workshop then walks toward the door, daylight
 ambient workshop room, soft late-afternoon window light, slow handheld
 push-in 50mm equivalent shallow depth of field, Selr AI palette cream
 walls dark wood table single purple notebook accent, audio: ambient
-room tone Luke's voice direct and unhurried, product: notebook stays in
-frame after Luke walks out, EXCLUDE: drone shots aerial angles stock
+room tone the founder's voice direct and unhurried, product: notebook stays in
+frame after the founder walks out, EXCLUDE: drone shots aerial angles stock
 office sets gradient overlays text on screen
 ```
 

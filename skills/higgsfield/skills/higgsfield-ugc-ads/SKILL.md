@@ -33,7 +33,6 @@ metadata:
 **Don't use it for:**
 - A one-off 5 to 10 second single-clip product video. Use `seedance-pipeline` instead.
 - A paste-product-URL-and-go single ad with no script control. Use `higgsfield-marketing-studio` instead.
-- A full multi-channel campaign across image, reel, carousel and copy. Use `higgsfield-cmo-agent` instead.
 
 **Roughly:**
 - ~28 credits per ad (1.5x buffer ~42 credits) for the actual render. Plus plan is the minimum ($39/mo annual, 1,000 credits/mo, 6 video / 8 image parallel). Ultra plan ($99/mo annual, 3,000 credits/mo) unlocks 8/8 parallel and 365-day UNLIMITED Nano Banana Pro, so the product still in Phase 1 is essentially free on Ultra.
@@ -102,7 +101,6 @@ below.
 | Front-cam talking-head edit (no AI generation) | `frontcam-reels` |
 | Cut silence + add captions on a finished video | `hyperframes` |
 | One-prompt-to-campaign across image + reel + carousel + copy | `higgsfield-marketing-studio` (sibling skill) |
-| Multi-channel brand campaign rollout | `higgsfield-cmo-agent` (sibling skill) |
 | Critique an already-rendered UGC ad frame-by-frame | `higgsfield-ad-critic` (sibling skill, the third chat in the loop) |
 
 ---
@@ -580,12 +578,10 @@ This skill's triggers MUST NOT poach from:
 - `higgsfield-marketing-studio`, that sibling skill takes ONE brief and
   emits a full campaign (image + reel + carousel + copy). Higher level than
   this skill.
-- `higgsfield-cmo-agent`, that sibling skill is the channel-router for
   multi-channel campaigns. Even higher level.
 
 If a user asks for "a UGC ad", default to this skill. If the request says
 "campaign" or "rollout" or "multi-channel", escalate to
-`higgsfield-marketing-studio` or `higgsfield-cmo-agent` first.
 
 ---
 

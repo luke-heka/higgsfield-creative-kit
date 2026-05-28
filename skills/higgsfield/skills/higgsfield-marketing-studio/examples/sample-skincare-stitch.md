@@ -117,7 +117,7 @@ CTA copy drafted, ran through `content-engine` + `humanizer`:
 - Draft 1: "Unlock brighter skin, link below to transform your routine."
 - humanizer flag: "unlock", "transform" both banned.
 - Rewrite: "See it for yourself, link below to shop."
-- content-engine pass (sounds like Luke / natural).
+- content-engine pass (sounds like your brand / natural).
 - humanizer pass.
 
 CTA prompt assembled from `templates/cta-clip-prompt.md`:

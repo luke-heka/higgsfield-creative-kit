@@ -208,7 +208,7 @@ YAML + all per-chunk render blocks concatenated, separated by `---` dividers.
 Used by the operator who wants to paste everything into Higgsfield in one
 sitting without flipping between files.
 
-This mirrors the cmo-agent `07-higgsfield-prompts.md` aggregator pattern from
+This uses an aggregator pattern that collates per-chunk prompts into one sheet,
 the Hewitt repo (see `/tmp/hewitt-skills-analysis.md`).
 
 ---

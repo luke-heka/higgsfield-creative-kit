@@ -1,5 +1,5 @@
 Higgsfield Creative Kit
-Built by Selr AI <luke@selrai.com.au>
+Built by Selr AI
 
 Distributed under the MIT License (see LICENSE in the vendored prompt skill folder).
 
@@ -24,5 +24,6 @@ The connector skill (skills/higgsfield-connector/) and the Selr-AI-tuned
 templates (templates/selrai-*.md) and docs (docs/*) are original Selr AI work,
 also released under MIT.
 
-If this kit's install flow breaks because Higgsfield's MCP API changed, please
-report the issue at: luke@selrai.com.au
+If this kit's install flow breaks because Higgsfield's MCP API changed, ask
+Claude to re-run the connector skill — it will detect the change, install any
+missing dependencies, and retry the connection itself.

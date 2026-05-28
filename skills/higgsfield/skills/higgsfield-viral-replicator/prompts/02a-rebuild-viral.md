@@ -39,8 +39,8 @@ And from the user:
 
 If brand is Selr AI, auto-load defaults:
 
-- Voice from `~/.claude/projects/-Users-luke/memory/selrai-business-model.md`
-- URLs from `~/.claude/projects/-Users-luke/memory/brand-contact-urls.md`
+- Voice from your own brand brief (or describe your tone inline)
+- URLs from your own brand notes (or paste them inline)
 - House rules (no em dashes, no outcome guarantees, no support promises,
   AU English) from `~/CLAUDE.md`
 

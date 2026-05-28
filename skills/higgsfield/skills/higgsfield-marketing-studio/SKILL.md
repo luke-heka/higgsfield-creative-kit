@@ -9,7 +9,6 @@ description: >
   This is the URL-driven path (Marketing Studio scrapes the product landing
   copy and generates with zero text prompt). For the script-driven multi-chunk
   UGC path see `higgsfield-ugc-ads`. For the brand-brief CMO-style multi-channel
-  campaign see `higgsfield-cmo-agent`.
 user-invocable: true
 metadata:
   tags: [higgsfield, marketing-studio, ugc, no-prompt, ecom, stitch, multi-format, campaign, ad-production]
@@ -32,7 +31,6 @@ metadata:
 
 **Don't use it for:**
 - Script-driven multi-chunk UGC where you've already written the dialogue (use `higgsfield-ugc-ads`)
-- A full multi-channel marketing campaign covering paid + email + social + DM (use `higgsfield-cmo-agent`)
 
 **Roughly:**
 - ~900 credits per finished 45-60s stitched ad (any plan, Marketing Studio = Seedance 2.0 backbone). On Plus ($39/mo annual, 1,000 credits/mo) that's one stitch per month. On Ultra ($99/mo annual, 3,000 credits/mo + 8/8 parallel + UNLIMITED Nano Banana Pro for avatar mints) you can run three full stitches per month and custom-mint as many avatars as you want.
@@ -99,7 +97,6 @@ before recommending `higgsfield-ugc-ads` (which needs a written script).
 | "No-prompt UGC for my store" | **This skill** |
 | "Write me a UGC ad script then render it" | `higgsfield-ugc-ads` |
 | "Multi-chunk UGC with a custom Soul character" | `higgsfield-ugc-ads` |
-| "Full brand campaign across paid + email + social" | `higgsfield-cmo-agent` |
 | "60-day content factory with 100 videos" | `higgsfield-content-factory` |
 | "Single 5-8s product clip" | `seedance-pipeline` direct |
 | "Static product image only" | `selrai-ad-image` |
@@ -276,7 +273,7 @@ broken workspace.
   - `humanizer` slop ship-gate (MANDATORY).
   - These run on the caption block, the CTA prompt, and any social copy
     that ships with the ad. Never skip, Marketing Studio's default copy
-    fails Luke's voice grade about 80% of the time.
+    fails your brand voice grade about 80% of the time.
 - Hand the final MP4 to `higgsfield-ad-critic` for post-render critique
   (hook strength, pacing, hallucination check, CTA legibility).
 
@@ -372,7 +369,7 @@ requires paid credits.
 | Voiceover rushes through dialogue | Seedance 2.0 default speech pacing is fast | CapCut speed adjust to 80-90% |
 | Head morphs / hands glitch in one frame | AI hallucination, ~5% of clips | B-roll overlay + audio mute (CapCut Fix 2) |
 | 5-clip stitch feels disjointed | Hook → demo → proof → social → CTA shape broken | Re-check format order against the goal-to-mix table |
-| Caption / CTA fails Luke's voice grade | Marketing Studio default copy is generic AI prose | Mandatory `content-engine` + `humanizer` pass before ship |
+| Caption / CTA fails your brand voice grade | Marketing Studio default copy is generic AI prose | Mandatory `content-engine` + `humanizer` pass before ship |
 | Credits burning faster than expected | Skipped `cheap_test` step | Restart with cheap_test; pause full_stitch until cheap_test passes |
 | MCP shows no Higgsfield tools | MCP not installed / wrong workspace | Run `higgsfield-apps` install ritual; check `higgsfield-workspaces` |
 
@@ -383,7 +380,7 @@ requires paid credits.
 Every text artifact the user sees on-screen or in the caption MUST pass
 through both gates:
 
-1. `content-engine`, voice filter (Luke's verified house style).
+1. `content-engine`, voice filter (your verified house style).
 2. `humanizer`, slop blocklist (banned vocab below + 21-category AI
    writing patterns).
 
@@ -450,7 +447,6 @@ critic step and logs a TODO to `<output>/critic-report.md`.
 - `higgsfield-ugc-ads`, script-driven multi-chunk UGC. Use when the
   user has a written script or wants more control over the per-clip
   dialogue.
-- `higgsfield-cmo-agent`, brand-brief-to-multi-channel campaign. Use
   when the deliverable is more than one ad (paid + email + organic + DM).
 - `higgsfield-content-factory`, 60-day, 100-video production line. Use
   when the user is running a content engine, not a single campaign.

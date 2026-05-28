@@ -82,7 +82,7 @@ specialise each layer and chain them.
 
 | Skill | What it does | Lives at |
 |---|---|---|
-| **nano-banana MCP** | 4K image upscale + edit | Already in Luke's MCP stack |
+| **nano-banana MCP** | 4K image upscale + edit | Already in your MCP stack |
 | **carousel-generator** | Render branded IG carousels from images | `~/.claude/skills/carousel-generator/` |
 | **copywriting** | Long-form copy: pages, emails, scripts | `~/.claude/skills/copywriting/` |
 | **direct-response-copy** | Hooks, headlines, CTAs, ad copy | `~/.claude/skills/direct-response-copy/` |

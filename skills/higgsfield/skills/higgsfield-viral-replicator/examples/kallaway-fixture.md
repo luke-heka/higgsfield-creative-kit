@@ -133,12 +133,12 @@ Do not mimic:
 
 For Selr AI: workshop offer or a "build one AI workflow today" hook.
 Talking-head with cuts is on the boundary between cinematic-ai-reels
-(real Luke talking-head + AI B-roll on emphasis beats) and
-motion-graphic-reels (typeset Luke quote with no face shown).
+(real founder talking-head + AI B-roll on emphasis beats) and
+motion-graphic-reels (typeset founder quote with no face shown).
 
-Default route for Selr AI: **`cinematic-ai-reels`**, real Luke face,
+Default route for Selr AI: **`cinematic-ai-reels`**, real founder face,
 warm grade, cut-driven pacing.
 
-Alternate route: **`motion-graphic-reels`**, if Luke prefers no face,
+Alternate route: **`motion-graphic-reels`**, if the founder prefers no face,
 typeset the contrarian claim as Greg-style Fraunces typography on the
 Selr palette.

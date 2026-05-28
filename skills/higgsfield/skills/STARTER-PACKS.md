@@ -52,14 +52,6 @@ founder / indie hacker**.
 | [`coach-hook-reel`](higgsfield-viral-replicator/starter-packs/coach-hook-reel/) | Coach hook-style reel rebuild. References: Greg Isenberg, Justin Welsh, Hormozi. | [hero-shot.mp4](higgsfield-viral-replicator/starter-packs/coach-hook-reel/sample/hero-shot.mp4) |
 | [`saas-feature-demo`](higgsfield-viral-replicator/starter-packs/saas-feature-demo/) | Indie SaaS feature demo rebuild. References: Marc Lou, Pieter Levels. Live screen recording composited. | [hero-shot.mp4](higgsfield-viral-replicator/starter-packs/saas-feature-demo/sample/hero-shot.mp4) |
 
-### `higgsfield-cmo-agent` (8-stage multi-channel campaign)
-
-| Pack | What it does | Sample |
-|---|---|---|
-| [`dtc-product-drop`](higgsfield-cmo-agent/starter-packs/dtc-product-drop/) | Launch + awareness campaign for a DTC product drop. Meta + TikTok primary. | [hero-reel.mp4](higgsfield-cmo-agent/starter-packs/dtc-product-drop/sample/hero-reel.mp4) |
-| [`coach-course-launch`](higgsfield-cmo-agent/starter-packs/coach-course-launch/) | Course launch with cart open/close. Email + organic IG + long-form YouTube. No income claims. | [hero-reel.mp4](higgsfield-cmo-agent/starter-packs/coach-course-launch/sample/hero-reel.mp4) |
-| [`local-service-opening`](higgsfield-cmo-agent/starter-packs/local-service-opening/) | Grand opening for a local trade or hospo business. TikTok Local Feed + Google Business. AU. | [hero-reel.mp4](higgsfield-cmo-agent/starter-packs/local-service-opening/sample/hero-reel.mp4) |
-
 ### `higgsfield-ad-critic` (frame-by-frame video critique)
 
 | Pack | What it does | Sample |
@@ -74,11 +66,11 @@ founder / indie hacker**.
 
 | Industry | Covered in skills |
 |---|---|
-| DTC ecommerce | content-factory, ugc-ads, marketing-studio, viral-replicator, cmo-agent, ad-critic |
+| DTC ecommerce | content-factory, ugc-ads, marketing-studio, viral-replicator, ad-critic |
 | Personal trainer / fitness coach | content-factory, ugc-ads |
 | Real estate agent | content-factory |
-| Local service trade (plumber, electrician, café, hairdresser) | ugc-ads, cmo-agent |
-| Coach / course creator | marketing-studio, viral-replicator, cmo-agent, ad-critic |
+| Local service trade (plumber, electrician, café, hairdresser) | ugc-ads |
+| Coach / course creator | marketing-studio, viral-replicator, ad-critic |
 | SaaS founder / indie hacker | marketing-studio, viral-replicator, ad-critic |
 
 ---

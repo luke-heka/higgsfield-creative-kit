@@ -35,7 +35,7 @@ Pick one. All three map onto the coach playbook in
      never uses outcome guarantees.
    - Hook archetype expected: claim-then-prove plus curiosity-gap
    - Greg-specific reference: see
-     `~/.claude/projects/-Users-luke/memory/gregisenberg-script-formula.md`
+     a proven short-form hook formula (your own swipe file or a creator framework you trust)
      for the 7-beat skeleton this reel will almost certainly use
 
 2. **Justin Welsh, solopreneur 2x2 framework reel**
@@ -97,7 +97,7 @@ visual style.
 | Direct-to-camera coach (Justin Welsh, Iman Gadzhi, Hormozi) | **`cinematic-ai-reels`** for AI face rebuild, OR **`frontcam-reels`** if the coach is filming themselves |
 | Mixed (face plus motion-graphic overlays) | **`cinematic-ai-reels`** primary with motion-graphic primitives layered (fallback to `frontcam-reels` plus `motion-graphic-reels`) |
 
-Selr AI default: Luke films himself, so for any Selr AI rebuild route
+Selr AI default: the founder films themselves, so for any Selr AI rebuild route
 to **`frontcam-reels`** with a `motion-graphic-reels` overlay pass.
 
 ---
