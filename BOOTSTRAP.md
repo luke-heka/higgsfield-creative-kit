@@ -12,7 +12,7 @@ You are about to install the Higgsfield Creative Kit for me. Do these steps in o
    a. `~/Downloads/higgsfield-creative-kit*.zip` (or `.tar.gz`)
    b. `~/Desktop/higgsfield-creative-kit*.zip`
    c. Any folder already named `higgsfield-creative-kit` in `~/Downloads/` or `~/Desktop/`
-   d. If none found, clone fresh: `git clone https://github.com/lukeselr/higgsfield-creative-kit /tmp/higgsfield-creative-kit`
+   d. If none found, clone fresh: `git clone https://github.com/luke-heka/higgsfield-creative-kit /tmp/higgsfield-creative-kit`
 
 3. If you found a zip/tar, extract it to `/tmp/higgsfield-creative-kit/`.
 
