@@ -90,7 +90,7 @@ specialise each layer and chain them.
 | **email-sequence** | Drip-campaign + lifecycle email programs | `~/.claude/skills/email-sequence/` |
 | **ad-creative** | Full ad system: visual + copy + landing | `~/.claude/skills/ad-creative/` |
 | **paid-ads** | Campaign strategy + bidding across platforms | `~/.claude/skills/paid-ads/` |
-| **meta-ads-mcp-setup** | Connect Meta Ads to Claude Code | Sister kit at `github.com/lukeselr/meta-ads-mcp-setup` (separate one-prompt install, not bundled here) |
+| **meta-ads-mcp-setup** | Connect Meta Ads to Claude Code | Sister kit at `github.com/luke-heka/meta-ads-mcp-setup` (separate one-prompt install, not bundled here) |
 | **social-content** | Multi-platform scheduling + optimisation | `~/.claude/skills/social-content/` |
 | **humanizer** | Strip AI tone from any text | `~/.claude/skills/humanizer/` |
 | **avoid-ai-writing** | Audit text for AI-pattern signatures | `~/.claude/skills/avoid-ai-writing/` |
